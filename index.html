@@ -2,139 +2,118 @@
 <html lang="fr">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Portfolio de Mihajarivo Aina Tsiory, développeuse Full-stack : Java, Spring Boot, React, Next.js.">
 <title>Tsiory Mihajarivo — Développeuse Full-stack</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
-
 <header class="header">
-
-<a href="#Accueil" class="logo">tsiory<span>.dev</span></a>
-
-<i class='bx bx-menu' id="menu-icon"></i>
-
-<nav class="navbar">
-<a href="#Accueil" class="active">Accueil</a>
-<a href="#A_propos">À propos</a>
-<a href="#Stack">Stack</a>
-<a href="#Projets">Projets</a>
-<a href="#Contact">Contact</a>
-</nav>
-
+  <a href="#Accueil" class="logo">tsiory<span>.dev</span></a>
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="#Accueil" class="active">Accueil</a>
+    <a href="#A_propos">À propos</a>
+    <a href="#Stack">Stack</a>
+    <a href="#Projets">Projets</a>
+    <a href="#Contact">Contact</a>
+  </nav>
 </header>
 
-
-
-<!-- HOME -->
-
 <section class="home" id="Accueil">
+  <div class="home-content">
 
-<div class="home-content">
-
-  <div class="terminal">
-    <div class="terminal-bar">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-      <span class="terminal-title">tsiory@portfolio : ~</span>
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">tsiory@portfolio : ~</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="output">Mihajarivo Aina Tsiory</p>
+        <p><span class="prompt">$</span> cat role.txt</p>
+        <p class="output type-target"><span class="multiple-text"></span></p>
+        <p><span class="prompt">$</span> ./disponibilite.sh</p>
+        <p class="output ok">→ en recherche d'une alternance, disponible immédiatement</p>
+        <p class="blink-line"><span class="prompt">$</span> <span class="cursor">▍</span></p>
+      </div>
     </div>
-    <div class="terminal-body">
-      <p><span class="prompt">$</span> whoami</p>
-      <p class="output">Mihajarivo Aina Tsiory</p>
-      <p><span class="prompt">$</span> cat role.txt</p>
-      <p class="output type-target"><span class="multiple-text"></span></p>
-      <p><span class="prompt">$</span> ./disponibilite.sh</p>
-      <p class="output ok">→ en recherche d'une alternance, disponible immédiatement</p>
-      <p class="blink-line"><span class="prompt">$</span> <span class="cursor">▍</span></p>
+
+    <p class="home-desc">
+      Étudiante en L2 Informatique à HEI Madagascar, je conçois des applications
+      web de bout en bout — API REST robustes en Java/Spring Boot côté serveur,
+      interfaces React/Next.js côté client.
+    </p>
+
+    <div class="social-medias">
+      <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+      <a href="mailto:hei.tsiory.234@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+      <a href="tel:+261373876426" aria-label="Téléphone"><i class='bx bx-phone'></i></a>
     </div>
+
+    <div class="home-actions">
+      <a href="#Projets" class="btn">Voir mes projets</a>
+      <a href="assets/CV_Mihajarivo_Aina_Tsiory.pdf" download class="btn btn-outline">Télécharger mon CV</a>
+    </div>
+
   </div>
-
-  <p class="home-desc">
-    Étudiante en L2 Informatique à HEI Madagascar, je conçois des applications
-    web de bout en bout — API REST robustes en Java/Spring Boot côté serveur,
-    interfaces React/Next.js côté client.
-  </p>
-
-  <div class="social-medias">
-    <a href="https://github.com/AinaTsiory" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-    <a href="mailto:hei.tsiory.234@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
-    <a href="tel:+261373876426" aria-label="Téléphone"><i class='bx bx-phone'></i></a>
-  </div>
-
-  <a href="assets/CV_Mihajarivo_Aina_Tsiory.pdf" download class="btn">Télécharger mon CV</a>
-
-</div>
-
 </section>
-
-
-
-<!-- ABOUT -->
 
 <section class="about" id="A_propos">
 
-<div class="about-img">
-  <img src="assets/photo.jpg" alt="Photo de Tsiory">
-</div>
-
-<div class="about-content">
-
-  <h2 class="heading-left"><span class="tag">01 —</span> À propos</h2>
-
-  <h3>Développeuse Full-stack, orientée backend</h3>
-
-  <p>
-    Je suis étudiante en 2ème année de Licence Informatique
-    à HEI Madagascar. Je construis des applications web complètes,
-    avec une préférence pour l'architecture et la logique côté serveur : conception
-    d'API REST, modélisation de bases de données, et intégration de services externes.
-  </p>
-
-  <p>
-    Còté frontend, je développe des interfaces avec React et Next.js — de
-    l'authentification à l'administration de données. Curieuse et autonome,
-    j'aime comprendre un système du client jusqu'à la base de données.
-  </p>
-
-  <div class="about-facts">
-    <div><span>L2</span>Informatique — HEI Madagascar</div>
-    <div><span>FR / EN</span>Courant / Intermédiaire (B1)</div>
-    <div><span>MG</span>Antananarivo, Madagascar</div>
+  <div class="about-img">
+    <img src="assets/photo.jpg" alt="Photo de Tsiory">
   </div>
 
-</div>
+  <div class="about-content">
+    <h2 class="heading-left"><span class="tag">01 —</span> À propos</h2>
+
+    <h3>Développeuse Full-stack, orientée backend</h3>
+
+    <p>
+      Je suis étudiante en 2ème année de Licence Informatique à HEI Madagascar.
+      Je construis des applications web complètes, avec une préférence pour
+      l'architecture et la logique côté serveur : conception d'API REST,
+      modélisation de bases de données, et intégration de services externes.
+    </p>
+
+    <p>
+      Côté frontend, je développe des interfaces avec React et Next.js — de
+      l'authentification à l'administration de données. Curieuse et autonome,
+      j'aime comprendre un système du client jusqu'à la base de données.
+    </p>
+
+    <div class="about-facts">
+      <div><span>L2</span>Informatique — HEI Madagascar</div>
+      <div><span>FR / EN</span>Courant / Intermédiaire (B1)</div>
+      <div><span>MG</span>Antananarivo, Madagascar</div>
+    </div>
+  </div>
 
 </section>
-
-
-
-<!-- STACK -->
 
 <section class="stack" id="Stack">
 
   <h2 class="heading"><span class="tag">02 —</span> Ma stack</h2>
 
   <div class="stack-container">
-    
+
     <div class="stack-box">
       <i class='bx bx-code-alt'></i>
       <h3>Frontend</h3>
       <ul class="tag-list">
         <li>React</li>
         <li>Next.js</li>
+        <li>TypeScript</li>
         <li>React Admin</li>
         <li>HTML5 / CSS3</li>
         <li>Tailwind CSS</li>
@@ -164,6 +143,7 @@
         <li>PostgreSQL</li>
         <li>Prisma</li>
         <li>Neon</li>
+        <li>Python</li>
         <li>Git / GitHub</li>
         <li>Postman</li>
         <li>JWT / bcrypt</li>
@@ -174,102 +154,196 @@
 
 </section>
 
-
-
-<!-- PROJETS -->
-
 <section class="portfolio" id="Projets">
 
-<h2 class="heading"><span class="tag">03 —</span> Mes projets</h2>
-<p class="section-sub">projects[1..6] — une sélection de projets académiques, backend et full-stack</p>
+  <h2 class="heading"><span class="tag">03 —</span> Mes projets</h2>
+  <p class="section-sub">projects[0..8] — stage, projets académiques et data</p>
 
-<div class="portfolio-container">
+  <div class="portfolio-container">
 
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[1]</div>
-    <h4>Gestion de Fédération Agricole</h4>
-    <p>API REST Spring Boot pour la gestion de collectivités, membres, cotisations
-      et statistiques, documentée avec OpenAPI/Swagger.</p>
-    <div class="tag-row">
-      <span>Spring Boot</span><span>PostgreSQL</span><span>OpenAPI</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
+    <article class="project-card">
+      <div class="project-cover cover-stage">
+        <i class='bx bx-store'></i>
+        <img src="assets/projects/nexus.png" alt="Aperçu du projet Nexus" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-stage">Stage</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[0]</div>
+        <h4>Nexus (NexusHill)</h4>
+        <p>Plateforme e-commerce développée en équipe : catalogue de plus de 15 catégories,
+          recherche en temps réel, favoris, panier et authentification.</p>
+        <div class="tag-row">
+          <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+        </div>
+        <span class="project-note"><i class='bx bx-briefcase'></i> Réalisé en stage</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-stage">
+        <i class='bx bx-wallet'></i>
+        <img src="assets/projects/novapay.png" alt="Aperçu du projet NovaPay VIP" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-stage">Stage</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[1]</div>
+        <h4>NovaPay VIP</h4>
+        <p>Interface web d'échange EUR → MGA : connexion par QR code, calcul des frais
+          et du montant en ariary, suivi des transactions (données simulées).</p>
+        <div class="tag-row">
+          <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span>
+        </div>
+        <span class="project-note"><i class='bx bx-briefcase'></i> Réalisé en stage</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-leaf'></i>
+        <img src="assets/projects/federation.png" alt="Aperçu du projet Fédération Agricole" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[2]</div>
+        <h4>Gestion de Fédération Agricole</h4>
+        <p>API REST Spring Boot pour la gestion de collectivités, membres, cotisations
+          et statistiques, documentée avec OpenAPI/Swagger.</p>
+        <div class="tag-row">
+          <span>Spring Boot</span><span>JDBC</span><span>PostgreSQL</span><span>OpenAPI</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-calendar-event'></i>
+        <img src="assets/projects/eventsync.png" alt="Aperçu du projet EventSync" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[3]</div>
+        <h4>EventSync</h4>
+        <p>Plateforme de gestion d'événements et d'inscriptions — authentification
+          JWT, interface d'administration React Admin, données via Prisma.</p>
+        <div class="tag-row">
+          <span>Next.js</span><span>React Admin</span><span>Prisma</span><span>PostgreSQL</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-data">
+        <i class='bx bx-line-chart'></i>
+        <img src="assets/projects/aqi.png" alt="Aperçu du pipeline de données AQI" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-data">Data</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[4]</div>
+        <h4>Pipeline de données AQI</h4>
+        <p>Projet de groupe : collecte de la qualité de l'air de 5 villes de l'île Maurice
+          via API, nettoyage et chargement dans un data warehouse dimensionnel.</p>
+        <div class="tag-row">
+          <span>Python</span><span>PostgreSQL</span><span>Data Warehouse</span><span>API</span>
+        </div>
+        <a href="https://github.com/Ramaherito-Heriniaina/air-quality-pipeline-donneesII" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-book'></i>
+        <img src="assets/projects/isbn.png" alt="Aperçu de l'API de recherche de livres" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[5]</div>
+        <h4>API de Recherche de Livres par ISBN</h4>
+        <p>API Spring Boot qui interroge OpenLibrary puis Google Books en fallback
+          pour retrouver un livre à partir de son ISBN.</p>
+        <div class="tag-row">
+          <span>Spring Boot</span><span>PostgreSQL</span><span>API externes</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-package'></i>
+        <img src="assets/projects/stock.png" alt="Aperçu du projet Gestion de Stock" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[6]</div>
+        <h4>Gestion de Stock — JDBC pur</h4>
+        <p>CRUD complet sans ORM : connexion sécurisée via .env, PreparedStatement,
+          transactions, pagination et filtres.</p>
+        <div class="tag-row">
+          <span>Java</span><span>JDBC</span><span>PostgreSQL</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-library'></i>
+        <img src="assets/projects/bibliotheque.png" alt="Aperçu de l'application de bibliothèque" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[7]</div>
+        <h4>Application de Bibliothèque</h4>
+        <p>API REST (framework POJA) avec calcul dynamique des quantités de stock,
+          configuration multi-environnement sur Neon PostgreSQL.</p>
+        <div class="tag-row">
+          <span>Spring Boot</span><span>JPA</span><span>Neon</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-cover cover-academic">
+        <i class='bx bx-receipt'></i>
+        <img src="assets/projects/depenses.png" alt="Aperçu de l'application de gestion de dépenses" loading="lazy" onerror="this.remove()">
+        <span class="project-badge badge-academic">Académique</span>
+      </div>
+      <div class="project-body">
+        <div class="portfolio-index">projects[8]</div>
+        <h4>Gestion de Dépenses</h4>
+        <p>Application de suivi de revenus et dépenses personnelles, avec une API
+          REST Express.js et stockage PostgreSQL.</p>
+        <div class="tag-row">
+          <span>React</span><span>Express.js</span><span>PostgreSQL</span>
+        </div>
+        <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
+          <i class='bx bxl-github'></i> Voir le code
+        </a>
+      </div>
+    </article>
+
   </div>
 
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[2]</div>
-    <h4>EventSync</h4>
-    <p>Plateforme de gestion d'événements et d'inscriptions — authentification
-      JWT, interface d'administration React Admin, données via Prisma.</p>
-    <div class="tag-row">
-      <span>Next.js</span><span>React Admin</span><span>Prisma</span><span>PostgreSQL</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
+  <div class="projects-more">
+    <button type="button" class="btn btn-outline" id="toggle-projects">Tout voir</button>
   </div>
-
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[3]</div>
-    <h4>API de Recherche de Livres par ISBN</h4>
-    <p>API Spring Boot qui interroge OpenLibrary puis Google Books en fallback
-      pour retrouver un livre à partir de son ISBN.</p>
-    <div class="tag-row">
-      <span>Spring Boot</span><span>PostgreSQL</span><span>API externes</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
-  </div>
-
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[4]</div>
-    <h4>Gestion de Stock — JDBC pur</h4>
-    <p>CRUD complet sans ORM : connexion sécurisée via .env, PreparedStatement,
-      transactions, pagination et filtres.</p>
-    <div class="tag-row">
-      <span>Java</span><span>JDBC</span><span>PostgreSQL</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
-  </div>
-
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[5]</div>
-    <h4>Application de Bibliothèque</h4>
-    <p>API REST (framework POJA) avec calcul dynamique des quantités de stock,
-      configuration multi-environnement sur Neon PostgreSQL.</p>
-    <div class="tag-row">
-      <span>Spring Boot</span><span>JPA</span><span>Neon</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
-  </div>
-
-  <div class="portfolio-box">
-    <div class="portfolio-index">projects[6]</div>
-    <h4>Gestion de Dépenses</h4>
-    <p>Application de suivi de revenus et dépenses personnelles, avec une API
-      REST Express.js et stockage PostgreSQL.</p>
-    <div class="tag-row">
-      <span>React</span><span>Express.js</span><span>PostgreSQL</span>
-    </div>
-    <a href="https://github.com/AinaTsiory" target="_blank" class="code-link">
-      <i class='bx bxl-github'></i> Voir le code
-    </a>
-  </div>
-
-</div>
 
 </section>
-
-
-
-<!-- CONTACT -->
 
 <section class="contact" id="Contact">
 
@@ -281,7 +355,7 @@
     <div class="contact-info">
       <a href="mailto:hei.tsiory.234@gmail.com"><i class='bx bx-envelope'></i> hei.tsiory.234@gmail.com</a>
       <a href="tel:+261373876426"><i class='bx bx-phone'></i> +261 37 38 764 26</a>
-      <a href="https://github.com/AinaTsiory" target="_blank"><i class='bx bxl-github'></i> github.com/AinaTsiory</a>
+      <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener"><i class='bx bxl-github'></i> github.com/AinaTsiory</a>
       <p class="location"><i class='bx bx-map'></i> Antananarivo, Madagascar</p>
     </div>
 
@@ -311,13 +385,10 @@
 
 </section>
 
-
-
 <footer class="footer">
   <p>© 2026 Mihajarivo Aina Tsiory</p>
-  <a href="#Accueil"><i class='bx bx-up-arrow-alt'></i></a>
+  <a href="#Accueil" aria-label="Retour en haut"><i class='bx bx-up-arrow-alt'></i></a>
 </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="main.js"></script>
