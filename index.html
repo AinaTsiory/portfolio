@@ -7,6 +7,7 @@
 <meta name="description" content="Portfolio de Mihajarivo Aina Tsiory, développeuse Full-stack : Java, Spring Boot, React, Next.js.">
 <title>Tsiory Mihajarivo — Développeuse Full-stack</title>
 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0F19'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='34' font-weight='700' fill='%23E3B23C'%3Et%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -157,7 +158,7 @@
 <section class="portfolio" id="Projets">
 
   <h2 class="heading"><span class="tag">03 —</span> Mes projets</h2>
-  <p class="section-sub">projects[0..8] — stage, projets académiques et data</p>
+  <p class="section-sub">projects[] — stage, projets académiques et data</p>
 
   <div class="portfolio-container">
 
@@ -166,12 +167,11 @@
         <i class='bx bx-store'></i>
         <img src="assets/projects/nexus.png" alt="Aperçu du projet Nexus" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-stage">Stage</span>
+        <span class="portfolio-index">projects[0]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[0]</div>
         <h4>Nexus (NexusHill)</h4>
-        <p>Plateforme e-commerce développée en équipe : catalogue de plus de 15 catégories,
-          recherche en temps réel, favoris, panier et authentification.</p>
+        <p>Plateforme e-commerce en équipe : catalogue, recherche en temps réel, favoris et panier.</p>
         <div class="tag-row">
           <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
         </div>
@@ -184,14 +184,13 @@
         <i class='bx bx-wallet'></i>
         <img src="assets/projects/novapay.png" alt="Aperçu du projet NovaPay VIP" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-stage">Stage</span>
+        <span class="portfolio-index">projects[1]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[1]</div>
         <h4>NovaPay VIP</h4>
-        <p>Interface web d'échange EUR → MGA : connexion par QR code, calcul des frais
-          et du montant en ariary, suivi des transactions (données simulées).</p>
+        <p>Interface d'échange EUR → MGA avec connexion par QR code et suivi des transactions (données simulées).</p>
         <div class="tag-row">
-          <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span>
+          <span>React</span><span>TypeScript</span><span>Vite</span>
         </div>
         <span class="project-note"><i class='bx bx-briefcase'></i> Réalisé en stage</span>
       </div>
@@ -202,14 +201,13 @@
         <i class='bx bx-leaf'></i>
         <img src="assets/projects/federation.png" alt="Aperçu du projet Fédération Agricole" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[2]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[2]</div>
         <h4>Gestion de Fédération Agricole</h4>
-        <p>API REST Spring Boot pour la gestion de collectivités, membres, cotisations
-          et statistiques, documentée avec OpenAPI/Swagger.</p>
+        <p>API REST de gestion de membres, cotisations et statistiques, documentée avec OpenAPI.</p>
         <div class="tag-row">
-          <span>Spring Boot</span><span>JDBC</span><span>PostgreSQL</span><span>OpenAPI</span>
+          <span>Spring Boot</span><span>JDBC</span><span>OpenAPI</span>
         </div>
         <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
           <i class='bx bxl-github'></i> Voir le code
@@ -222,14 +220,13 @@
         <i class='bx bx-calendar-event'></i>
         <img src="assets/projects/eventsync.png" alt="Aperçu du projet EventSync" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[3]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[3]</div>
         <h4>EventSync</h4>
-        <p>Plateforme de gestion d'événements et d'inscriptions — authentification
-          JWT, interface d'administration React Admin, données via Prisma.</p>
+        <p>Gestion d'événements et d'inscriptions avec authentification JWT et administration React Admin.</p>
         <div class="tag-row">
-          <span>Next.js</span><span>React Admin</span><span>Prisma</span><span>PostgreSQL</span>
+          <span>Next.js</span><span>React Admin</span><span>Prisma</span>
         </div>
         <a href="https://github.com/AinaTsiory" target="_blank" rel="noopener" class="code-link">
           <i class='bx bxl-github'></i> Voir le code
@@ -242,14 +239,13 @@
         <i class='bx bx-line-chart'></i>
         <img src="assets/projects/aqi.png" alt="Aperçu du pipeline de données AQI" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-data">Data</span>
+        <span class="portfolio-index">projects[4]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[4]</div>
         <h4>Pipeline de données AQI</h4>
-        <p>Projet de groupe : collecte de la qualité de l'air de 5 villes de l'île Maurice
-          via API, nettoyage et chargement dans un data warehouse dimensionnel.</p>
+        <p>Collecte de la qualité de l'air de 5 villes de l'île Maurice vers un data warehouse.</p>
         <div class="tag-row">
-          <span>Python</span><span>PostgreSQL</span><span>Data Warehouse</span><span>API</span>
+          <span>Python</span><span>PostgreSQL</span><span>Data Warehouse</span>
         </div>
         <a href="https://github.com/Ramaherito-Heriniaina/air-quality-pipeline-donneesII" target="_blank" rel="noopener" class="code-link">
           <i class='bx bxl-github'></i> Voir le code
@@ -262,12 +258,11 @@
         <i class='bx bx-book'></i>
         <img src="assets/projects/isbn.png" alt="Aperçu de l'API de recherche de livres" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[5]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[5]</div>
-        <h4>API de Recherche de Livres par ISBN</h4>
-        <p>API Spring Boot qui interroge OpenLibrary puis Google Books en fallback
-          pour retrouver un livre à partir de son ISBN.</p>
+        <h4>API de Recherche de Livres</h4>
+        <p>Retrouve un livre par ISBN via OpenLibrary, puis Google Books en fallback.</p>
         <div class="tag-row">
           <span>Spring Boot</span><span>PostgreSQL</span><span>API externes</span>
         </div>
@@ -282,12 +277,11 @@
         <i class='bx bx-package'></i>
         <img src="assets/projects/stock.png" alt="Aperçu du projet Gestion de Stock" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[6]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[6]</div>
         <h4>Gestion de Stock — JDBC pur</h4>
-        <p>CRUD complet sans ORM : connexion sécurisée via .env, PreparedStatement,
-          transactions, pagination et filtres.</p>
+        <p>CRUD complet sans ORM : PreparedStatement, transactions, pagination et filtres.</p>
         <div class="tag-row">
           <span>Java</span><span>JDBC</span><span>PostgreSQL</span>
         </div>
@@ -302,12 +296,11 @@
         <i class='bx bx-library'></i>
         <img src="assets/projects/bibliotheque.png" alt="Aperçu de l'application de bibliothèque" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[7]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[7]</div>
         <h4>Application de Bibliothèque</h4>
-        <p>API REST (framework POJA) avec calcul dynamique des quantités de stock,
-          configuration multi-environnement sur Neon PostgreSQL.</p>
+        <p>API REST (POJA) avec calcul dynamique des stocks et configuration multi-environnement.</p>
         <div class="tag-row">
           <span>Spring Boot</span><span>JPA</span><span>Neon</span>
         </div>
@@ -322,12 +315,11 @@
         <i class='bx bx-receipt'></i>
         <img src="assets/projects/depenses.png" alt="Aperçu de l'application de gestion de dépenses" loading="lazy" onerror="this.remove()">
         <span class="project-badge badge-academic">Académique</span>
+        <span class="portfolio-index">projects[8]</span>
       </div>
       <div class="project-body">
-        <div class="portfolio-index">projects[8]</div>
         <h4>Gestion de Dépenses</h4>
-        <p>Application de suivi de revenus et dépenses personnelles, avec une API
-          REST Express.js et stockage PostgreSQL.</p>
+        <p>Suivi des revenus et dépenses avec API REST Express.js et PostgreSQL.</p>
         <div class="tag-row">
           <span>React</span><span>Express.js</span><span>PostgreSQL</span>
         </div>
@@ -340,7 +332,7 @@
   </div>
 
   <div class="projects-more">
-    <button type="button" class="btn btn-outline" id="toggle-projects">Tout voir</button>
+    <button type="button" class="btn btn-outline" id="toggle-projects" aria-expanded="false">Tout voir</button>
   </div>
 
 </section>
