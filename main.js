@@ -1,5 +1,3 @@
-// ================= MENU MOBILE =================
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -15,9 +13,6 @@ document.querySelectorAll('.navbar a').forEach(link => {
     };
 });
 
-
-// ================= TEXTE ANIME (rôle dans le terminal) =================
-
 const typed = new Typed('.multiple-text', {
     strings: [
         "Développeuse Full-stack",
@@ -31,35 +26,85 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+const header = document.querySelector('.header');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 
-// ================= LIEN ACTIF AU SCROLL =================
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
     sections.forEach(section => {
-        let top = window.scrollY;
-        let offset = section.offsetTop - 150;
-        let height = section.offsetHeight;
-        let id = section.getAttribute('id');
+        const top = window.scrollY;
+        const offset = section.offsetTop - 150;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
             navLinks.forEach(link => link.classList.remove('active'));
-            let activeLink = document.querySelector('header nav a[href*=' + id + ']');
+            const activeLink = document.querySelector('header nav a[href="#' + id + '"]');
             if (activeLink) activeLink.classList.add('active');
         }
     });
+});
+
+const projectCards = document.querySelectorAll('.project-card');
+const toggleBtn = document.querySelector('#toggle-projects');
+const visibleCount = 6;
+let expanded = false;
+
+const renderProjects = () => {
+    projectCards.forEach((card, index) => {
+        card.classList.toggle('is-hidden', !expanded && index >= visibleCount);
+    });
+    toggleBtn.textContent = expanded
+        ? 'Voir moins'
+        : 'Tout voir (' + projectCards.length + ')';
 };
 
+if (toggleBtn) {
+    if (projectCards.length <= visibleCount) {
+        toggleBtn.style.display = 'none';
+    }
 
-const form = document.querySelector("form");
+    toggleBtn.addEventListener('click', () => {
+        expanded = !expanded;
+        renderProjects();
+        if (!expanded) {
+            document.querySelector('#Projets').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    renderProjects();
+}
+
+const revealTargets = document.querySelectorAll(
+    '.heading, .section-sub, .about-img, .about-content, .stack-box, .project-card, .contact-grid'
+);
+
+revealTargets.forEach(el => el.classList.add('reveal'));
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            el.classList.add('is-visible');
+            el.addEventListener('animationend', () => {
+                el.classList.remove('reveal', 'is-visible');
+            }, { once: true });
+            observer.unobserve(el);
+        }
+    });
+}, { threshold: 0.12 });
+
+revealTargets.forEach(el => observer.observe(el));
+
+const form = document.querySelector('form');
 
 if (form) {
-    form.addEventListener("submit", function () {
+    form.addEventListener('submit', function () {
         const btn = form.querySelector("button[type='submit']");
         if (btn) {
-            btn.textContent = "Envoi en cours...";
+            btn.textContent = 'Envoi en cours...';
             btn.disabled = true;
         }
     });
