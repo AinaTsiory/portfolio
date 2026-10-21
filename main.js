@@ -56,9 +56,8 @@ const renderProjects = () => {
     projectCards.forEach((card, index) => {
         card.classList.toggle('is-hidden', !expanded && index >= visibleCount);
     });
-    toggleBtn.textContent = expanded
-        ? 'Voir moins'
-        : 'Tout voir (' + projectCards.length + ')';
+    toggleBtn.textContent = expanded ? 'Voir moins' : 'Tout voir';
+    toggleBtn.setAttribute('aria-expanded', expanded);
 };
 
 if (toggleBtn) {
